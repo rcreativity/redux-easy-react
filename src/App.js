@@ -1,24 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Counter } from "./features/counter/Counter";
+import Todo from "./features/todo/Todo";
+import Inc from "./Inc.js";
+
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h2>Redux Toolkit & Easy React State</h2>
+      <br />
+      <Todo />
+      <br />
+      <hr style={{ width: "50%" }} />
+      <Counter />
+      <br />
+      <Inc />
     </div>
   );
 }
